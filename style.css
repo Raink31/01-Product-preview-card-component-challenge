@@ -22,7 +22,7 @@ body{
 
 #boutton{
     background-color: hsl(158, 36%, 37%);
-    padding: 13px 20px 13px 50px;
+    padding: 3px 20px 3px 50px;
     border-radius: 5px;
     width: 150px;
     margin-top: 10%;
@@ -40,10 +40,13 @@ body{
 #boutton img{
     vertical-align: middle;
     margin-right: 8%;
+    padding: 10px 0;
 }
 
 #boutton:hover{
     background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 #texte{
