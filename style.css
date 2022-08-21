@@ -52,7 +52,6 @@ body{
 #texte{
     margin-left: 25px;
     margin-right: 25px;
-    text-align: justify;
 }
 
 #texte h2{
@@ -98,3 +97,57 @@ body{
     text-decoration: line-through;
 }
 
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        height: 660px;
+    }
+
+    #photo_parfum{
+        padding: 0;
+        content: url("images/image-product-mobile.jpg");
+    }
+
+    #main img{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    #texte h1{
+        font-size: 2.2em;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #texte p{
+        font-size: 0.97em;
+        line-height:25px;
+    }
+
+    #boutton{
+        margin-top: 5%;
+        margin-left: 1%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 85px;
+        padding-right: 85px;
+        border-radius: 8px;
+    }
+
+    #text_boutton{
+        text-align: center;
+    }
+}
