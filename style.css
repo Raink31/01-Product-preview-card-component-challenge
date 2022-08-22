@@ -6,6 +6,7 @@ body{
     background-color: hsl(30, 38%, 92%);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -103,12 +104,17 @@ body{
     display: none;
 }
 
+.attribution{
+    margin-top: 0.5%;
+    font-size: 0.8em;
+}
+
 @media screen and (max-width: 600px){
     #main{
         display: flex;
         flex-direction: column;
         width: 375px;
-        height: 660px;
+        height: 640px;
     }
 
     #photo_parfum{
@@ -151,5 +157,9 @@ body{
 
     #text_boutton{
         text-align: center;
+    }
+
+    .attribution{
+        margin-top: 1%;
     }
 }
