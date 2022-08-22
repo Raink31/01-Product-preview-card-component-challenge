@@ -4,9 +4,10 @@
 
 body{
     background-color: hsl(30, 38%, 92%);
-    height: 98vh;
-    display: grid;
-    place-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #main{
@@ -64,7 +65,8 @@ body{
 
 #texte h1{
     font-family: "Fraunces";
-    font-size: 1.6em;
+    font-size: 2em;
+    line-height: 32px;
 }
 
 #texte p{
