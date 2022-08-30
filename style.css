@@ -49,6 +49,7 @@ h1{
 .img-box img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .text-box{
@@ -133,7 +134,7 @@ footer a{
 
 @media screen and (min-width: 768px){
     .container{
-        max-width: 700px;
+        max-width: 690px;
     }
 
     .wrapper{
@@ -169,5 +170,15 @@ footer a{
     .boutton-container{
         margin: 2rem auto auto auto;
         padding: 7% 15%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container{
+        max-width: 300px;
+    }
+
+    footer{
+        font-size: 0.7em;
     }
 }
