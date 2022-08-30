@@ -141,10 +141,6 @@ footer a{
         grid-template-columns: 1fr 1fr;
     }
 
-    .img-box img{
-        content: url("assets/images/image-product-desktop.jpg");
-    }
-
     .text-box{
         padding: 2rem;
     }
@@ -165,6 +161,7 @@ footer a{
 
     .price strong{
         font-size: 2.8em;
+        font-weight: 700;
     }
 
     .boutton-container{
