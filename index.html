@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Product preview card component</title>
-  </head>
-  <body>
-    <div id="main">
-      <img id="photo_parfum" src="images/image-product-desktop.jpg" alt="photo_parfum" />
-      <div id="texte">
-        <h2>P E R F U M E</h2>
-        <h1>
-          Gabrielle<br class="pc"/>
-          Essence<br class="mobile"/> Eau<br class="pc"/>
-          De Parfum
-        </h1>
-        <p>A floral, solar and voluptuous<br>
-        interpretation composed by<br class="pc">
-        Olivier<br class="mobile"> Polge, Perfumer-Creator<br class="pc">
-        for the House of<br class="mobile"> CHANEL.</p>
-        <div id="prix">
-          <h3>$149.99</h3>
-          <h4>$169.99</h4>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | NFT preview card component</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="img-box">
+                <img src="assets/images/image-product-mobile.jpg" alt="parfum-img">
+            </div>
+            <div class="text-box">
+                <div class="pre-title">
+                    <p>PERFUME</p>
+                </div>
+                <div class="title">
+                    <h1>Gabrielle Essence Eau De Parfum</h1>
+                </div>
+                <div class="subtitle">
+                    <p>A floral, solar and voluptuous interpretation composed by Olivier
+                        Polge, Perfumer-Creator for the House of CHANEL.
+                    </p>
+                </div>
+                <div class="price">
+                    <p><strong>$149.99</strong></p>
+                    <p><span>$169.99</span></p>
+                </div>
+                <div class="boutton-container">
+                    <div class="boutton">
+                    <img src="assets/images/icon-cart.svg" alt="">
+                    <p><a href="#">Add to Cart</a></p>
+                </div>
+            </div>
         </div>
-        <div id="boutton">
-          <div id="text_boutton">
-            <img src="images/icon-cart.svg" alt="icone_panier">
-          <a href="#">Add to Cart</a>
-          </div>
-        </div>
-      </div>
     </div>
-    <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Yohan Baes</a>.
-    </div>
-  </body>
+    <footer>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Yohan Baes</a>.
+    </footer>
+</body>
 </html>

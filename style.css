@@ -1,165 +1,173 @@
-/* POLICES */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* CSS */
 
 body{
-    background-color: hsl(30, 38%, 92%);
-    height: 100vh;
+    font-family: "Montserrat";
+    font-size: 14px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
 }
 
-#main{
-    display: flex;
+h1{
+    font-family: "Fraunces";
+}
+
+.container{
+    max-width: 375px;
+}
+
+.wrapper{
     background-color: white;
     border-radius: 10px;
-    height: 400px;
-    width: 540px;
-}
-#main img{
-    border-radius: 10px 0 0 10px;
-}
-
-#boutton{
-    background-color: hsl(158, 36%, 37%);
-    padding: 3px 20px 3px 50px;
-    border-radius: 5px;
-    width: 150px;
-    margin-top: 10%;
+    overflow: hidden;
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 15px rgba(78, 27, 27, 0.20);
 }
 
-#boutton a{
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat", serif;
+.img-box{
+    height: 100%;
+    width: 100%;
+}
+
+.img-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-box{
+    padding: 1.5rem;
+}
+
+.pre-title p{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
     font-size: 0.9em;
-    font-weight: 700;
-    padding-top: 2px;
+    font-weight: 100;
 }
 
-#boutton img{
-    vertical-align: middle;
-    margin-right: 8%;
-    padding: 10px 0;
+.title h1{
+    padding-top: 0.7rem;
+    line-height: 35px;
+    font-size: 2.4em;
 }
 
-#boutton:hover{
-    background-color: hsl(212, 21%, 14%);
-    cursor: pointer;
-    transition: 0.2s;
+.subtitle p{
+    padding-top: 1rem;
+    color: hsl(228, 12%, 48%);
+    font-size: 1.05em;
+    line-height: 25px;
 }
 
-#texte{
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-#texte h2{
-    margin-top: 25px;
-    font-family: "Montserrat";
-    font-weight: 10;
-    font-size: 0.9em;
-    color: #00000071;
-}
-
-#texte h1{
-    font-family: "Fraunces";
-    font-size: 2em;
-    line-height: 32px;
-}
-
-#texte p{
-    font-family: "Montserrat";
-    font-weight: 10;
-    font-size: 0.8em;
-    color: #00000071;
-    line-height: 20px;
-}
-
-#prix{
+.price{
     display: flex;
     align-items: center;
-    margin-top: 0;
-    height: 10%;
+    padding-top: 1.4rem;
 }
 
-#prix h3{
+.price strong{
     font-family: "Fraunces";
-    font-size: 2em;
+    font-size: 2.4em;
     color: hsl(158, 36%, 37%);
-    margin-right: 7%;
 }
 
-#prix h4{
-    font-family: "Montserrat";
-    font-weight: 10;
-    font-size: 0.8em;
-    color: #00000071;
+.price span{
+    color: hsl(228, 12%, 48%);
     text-decoration: line-through;
+    padding-left: 1.3rem;
 }
 
-.mobile{
-    display: none;
+.boutton-container{
+    margin: 1rem auto auto auto;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    padding: 5% 15%;
+    transition: background-color 0.4s;
 }
 
-.attribution{
-    margin-top: 0.5%;
-    font-size: 0.8em;
+.boutton-container:hover{
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
 }
 
-@media screen and (max-width: 600px){
-    #main{
-        display: flex;
-        flex-direction: column;
-        width: 375px;
-        height: 640px;
+.boutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boutton a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+footer{
+    padding-top: 0.5rem;
+    width: max-content;
+    font-size: 0.9em;
+    margin: auto;
+}
+
+footer a{
+    color: hsl(158, 36%, 37%);
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 700px;
     }
 
-    #photo_parfum{
-        padding: 0;
-        content: url("images/image-product-mobile.jpg");
+    .wrapper{
+        grid-template-columns: 1fr 1fr;
     }
 
-    #main img{
-        border-radius: 10px 10px 0 0;
+    .img-box img{
+        content: url("assets/images/image-product-desktop.jpg");
     }
 
-    .pc{
-        display: none;
+    .text-box{
+        padding: 2rem;
     }
 
-    .mobile{
-        display: block;
+    .title h1{
+        padding-top: 1.5rem;
+        font-size: 2.7em;
     }
 
-    #texte h1{
-        font-size: 2.2em;
-        margin-top: 10px;
-        margin-bottom: 0;
+    .subtitle p{
+        padding-top: 2rem;
+        font-size: 1.2em;
     }
 
-    #texte p{
-        font-size: 0.97em;
-        line-height:25px;
+    .price{
+        padding-top: 2rem;
     }
 
-    #boutton{
-        margin-top: 5%;
-        margin-left: 1%;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 85px;
-        padding-right: 85px;
-        border-radius: 8px;
+    .price strong{
+        font-size: 2.8em;
     }
 
-    #text_boutton{
-        text-align: center;
-    }
-
-    .attribution{
-        margin-top: 1%;
+    .boutton-container{
+        margin: 2rem auto auto auto;
+        padding: 7% 15%;
     }
 }
