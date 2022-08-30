@@ -11,10 +11,10 @@ Your challenge is to build out this card component and get it looking as close t
 ## Screenshot
 
 ### Mobile Screenshot
-![mobile screenshot](./images/mobile.png)
+![mobile screenshot](./assets/images/mobile.png)
 
 ### Desktop Screenshot
-![desktop screenshot](./images/desktop.png)
+![desktop screenshot](./assets/images/desktop.png)
 
 
 ## Links
